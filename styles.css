@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    padding-top: 60px; /* Memberikan ruang untuk navbar fixed */
+}
+
+.navbar {
+    position: fixed; /* Membuat navbar tetap terlihat saat scroll */
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    z-index: 1000; /* Memastikan navbar berada di atas elemen lainnya */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Memberikan bayangan agar lebih terlihat */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul .menu-items {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #ff6600;
+}
+
+.navbar ul .feedback-link a {
+    color: #ff6600;
+    background-color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul .feedback-link a:hover {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-bottom: 2px solid #eee;
+}
+
+.container h1 {
+    font-size: 48px;
+    color: #ff6600;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.welcome-statement {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    color: #666;
+    font-size: 18px;
+    text-align: center;
+    border-top: 2px solid #ff6600;
+    border-bottom: 2px solid #ff6600;
+}
+
+.container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.menu-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.menu-section h2 {
+    color: #ff6600;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.menu-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.menu-section ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.menu-section ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.menu-section ul li:last-child {
+    border-bottom: none;
+}
+
+.price {
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu-section ul li:hover {
+    background-color: #f3f3f3;
+}
+
+.feedback-section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 2px solid #ccc;
+    text-align: center;
+}
+
+.feedback-section h2 {
+    color: #ff6600;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.feedback-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.feedback-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feedback-section label {
+    font-size: 16px;
+    color: #333;
+}
+
+.feedback-section input,
+.feedback-section textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.feedback-section button {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedback-section button:hover {
+    background-color: #ff6600;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-section ul li,
+    .feedback-section form {
+        font-size: 16px;
+    }
+
+    .container h1 {
+        font-size: 36px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+}
